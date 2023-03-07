@@ -26,8 +26,8 @@ class Orders with ChangeNotifier {
     return [..._orders];
   }
 
-  final String authToken;
-  final String userId;
+  final String? authToken;
+  final String? userId;
 
   Orders(this.authToken, this.userId, this._orders);
   Future<void> fetchAndSetOrders() async {
